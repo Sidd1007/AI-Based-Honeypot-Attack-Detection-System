@@ -32,6 +32,23 @@ This project combines honeypot technology and machine learning to detect cyber a
 - Command Count
 - Session Duration
 
+## Project Architecture
+
+Attacker
+↓
+Cowrie / Dionaea
+↓
+JSON Logs
+↓
+Feature Extraction
+↓
+CSV Dataset
+↓
+Random Forest Model
+↓
+Attack Classification
+
+
 ## Results
 
 - Classification of Brute Force and Interactive Attacks
