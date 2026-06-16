@@ -1,0 +1,15 @@
+session,total_attempts,unique_usernames,failed_attempts,success_attempts,avg_time_gap,command_count,session_duration,attack_label
+interactive5.json,1,1,0,1,5.78,27,156.0,interactive
+bruteforce3.json,108,1,108,0,0.25,0,26.24,brute_force
+interactive2.json,1,1,0,1,5.78,27,156.0,interactive
+Medusabrute1.json,4,1,2,2,8.96,0,26.87,brute_force
+bruteforce2.json,20,1,20,0,1.0,0,19.09,brute_force
+interactive4.json,2,1,0,2,25.85,16,439.39,interactive
+medusa2.json,2,1,1,1,1.02,0,1.02,brute_force
+attack_chain1.json,7,1,1,6,12.11,14,242.16,interactive
+bruteforce1.json,818,3,801,17,3.55,17,2962.77,brute_force
+attack_chain2.json,76,1,76,0,2.33,0,174.42,interactive
+Medusa3.json,59,1,59,0,1.01,0,58.42,brute_force
+attack_chain3.json,2,1,0,2,6.95,9,69.52,interactive
+interactive3.json,3,1,0,3,10.04,66,682.93,interactive
+interactive1.json,2,1,0,2,154.01,54,8470.7,interactive
