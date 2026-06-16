@@ -34,18 +34,12 @@ This project combines honeypot technology and machine learning to detect cyber a
 
 ## Project Architecture
 
-Attacker
-↓
-Cowrie / Dionaea
-↓
-JSON Logs
-↓
-Feature Extraction
-↓
-CSV Dataset
-↓
-Random Forest Model
-↓
+Attacker->
+Cowrie / Dionaea->
+JSON Logs->
+Feature Extraction->
+CSV Dataset->
+Random Forest Model->
 Attack Classification
 
 
