@@ -1,3 +1,4 @@
+
 # AI-Based Honeypot Attack Detection System
 
 ## Overview
@@ -34,13 +35,7 @@ This project combines honeypot technology and machine learning to detect cyber a
 
 ## Project Architecture
 
-Attacker->
-Cowrie / Dionaea->
-JSON Logs->
-Feature Extraction->
-CSV Dataset->
-Random Forest Model->
-Attack Classification
+<img width="1672" height="941" alt="ChatGPT Image Jun 17, 2026, 01_59_43 PM" src="https://github.com/user-attachments/assets/31ef3137-98a6-4f6a-8cfe-a11af7ce2980" />
 
 
 ## Results
