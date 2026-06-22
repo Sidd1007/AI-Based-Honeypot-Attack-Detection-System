@@ -68,9 +68,7 @@ for filename in os.listdir(sessions_folder):
     if len(events) == 0:
         continue
 
-    # -------------------------------
-    # FEATURE EXTRACTION
-    # -------------------------------
+    #Feature Extraction
 
     total_attempts = sum(
         1
@@ -124,9 +122,8 @@ for filename in os.listdir(sessions_folder):
         if gaps else 0
     )
 
-    # -------------------------------
+   
     # LABELING
-    # -------------------------------
 
     filename_lower = filename.lower()
 
@@ -148,10 +145,8 @@ for filename in os.listdir(sessions_folder):
     else:
         attack_label = "interactive"
 
-    # -------------------------------
     # ADD TO DATASET
-    # -------------------------------
-
+    
     final_data.append([
         filename,
         total_attempts,
@@ -164,10 +159,8 @@ for filename in os.listdir(sessions_folder):
         attack_label
     ])
 
-# -------------------------------
-# SAVE CSV
-# -------------------------------
 
+# SAVE CSV
 with open("honeypot_features.csv", "w", newline="") as csvfile:
 
     writer = csv.writer(csvfile)
