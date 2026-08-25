@@ -8,13 +8,11 @@ from sklearn.metrics import (
 )
 from sklearn.model_selection import cross_val_score
 
-# -----------------------------
-# LOAD DATASET
-# -----------------------------
+
+
 
 data = pd.read_csv("honeypot_features.csv")
 
-# Clean labels
 data['attack_label'] = (
     data['attack_label']
     .astype(str)
@@ -22,7 +20,7 @@ data['attack_label'] = (
     .str.lower()
 )
 
-# Convert labels
+
 data['attack_label'] = data['attack_label'].map({
     'interactive': 0,
     'brute_force': 1
@@ -31,9 +29,9 @@ data['attack_label'] = data['attack_label'].map({
 # Remove rows with labels not mapped
 data = data.dropna()
 
-# -----------------------------
+
 # FEATURES
-# -----------------------------
+
 
 feature_cols = [
     'total_attempts',
@@ -54,18 +52,18 @@ for col in feature_cols:
 
 data = data.dropna()
 
-# -----------------------------
+
 # DATASET INFO
-# -----------------------------
+
 
 print("Dataset Shape:", data.shape)
 
 print("\nLabel Distribution:")
 print(data['attack_label'].value_counts())
 
-# -----------------------------
+
 # SPLIT DATA
-# -----------------------------
+
 
 X = data[feature_cols]
 y = data['attack_label']
@@ -78,9 +76,8 @@ X_train, X_test, y_train, y_test = train_test_split(
     stratify=y
 )
 
-# -----------------------------
+
 # MODEL
-# -----------------------------
 
 model = RandomForestClassifier(
     n_estimators=300,
@@ -125,9 +122,8 @@ print(
     )
 )
 
-# -----------------------------
+
 # CROSS VALIDATION
-# -----------------------------
 
 scores = cross_val_score(
     model,
@@ -147,9 +143,7 @@ print(
     )
 )
 
-# -----------------------------
 # FEATURE IMPORTANCE
-# -----------------------------
 
 print("\nFeature Importance:")
 
