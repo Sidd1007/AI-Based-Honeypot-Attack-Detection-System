@@ -143,7 +143,7 @@ for filename in os.listdir(sessions_folder):
         attack_label = "interactive"
 
     else:
-        attack_label = "interactive"
+        attack_label = "Unknown"
 
     # ADD TO DATASET
     
